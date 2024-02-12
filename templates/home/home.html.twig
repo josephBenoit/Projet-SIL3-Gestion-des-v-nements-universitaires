@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}GasaEvent -Aceuil{% endblock %}
+
+{% block body %}
+    {# Carousel presentation #}
+    <div id="carousel-container">
+        <div class="carousel-slide">
+            <img class="carouselPresntImmg" src="images/home/piscine_2.jpg">
+        </div>
+        <div class="carousel-slide">
+            <img class="carouselPresntImmg" src="images/home/basket_3.webp">
+        </div>
+        <div class="carousel-slide">
+            <img class="carouselPresntImmg" src="images/home/foret_2.jpg">
+        </div>
+        <button class="carouselNav-btn" id="carouselPrev-btn">&lt;</button>
+        <button class="carouselNav-btn" id="carouselNext-btn">&gt;</button>
+    </div>
+
+    {# Welcome #}
+    <div class="welcome-container">
+        <h2 class="">WELCOME</h2>
+        <p class="">
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+        </p>
+    </div>
+
+    {# New events #}
+    <div class="eventName-container">
+        <h2 class="event-name">UPCOMING EVENTS</h2>
+        <button class="event-btn">
+            <a id="a-customiseNewEvent" class="a-default" href="#"><strong>SEE MORE ▶</strong></a>
+        </button>
+    </div>
+    <div id="newEventCarousel-container">
+        <div id="newEventCarousel-slides">
+            <div class="newEventCarousel-slide" id="newEventCarousel-slide1">
+                <div class="newEventImg-container">
+                    <a href="#"><img class="newEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="newEventDescrp-container">
+                    <div class="newEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="newEventDescrp-">
+                    </div>
+                </div>
+                <div class="newEventbtn-container">
+                    <button class="newEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="newEventCarousel-slide" id="newEventCarousel-slide2">
+                <div class="newEventImg-container">
+                    <a href="#"><img class="newEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="newEventDescrp-container">
+                    <div class="newEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="newEventDescrp-">
+                    </div>
+                </div>
+                <div class="newEventbtn-container">
+                    <button class="newEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="newEventCarousel-slide" id="newEventCarousel-slide3">
+                <div class="newEventImg-container">
+                    <a href="#"><img class="newEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="newEventDescrp-container">
+                    <div class="newEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="newEventDescrp-">
+                    </div>
+                </div>
+                <div class="newEventbtn-container">
+                    <button class="newEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="newEventCarousel-slide" id="newEventCarousel-slide4">
+                <div class="newEventImg-container">
+                    <a href="#"><img class="newEventImg" src=""></a>
+                </div>
+                <div class="newEventDescrp-container">
+                    <div class="newEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="newEventDescrp-">
+                    </div>
+                </div>
+                <div class="newEventbtn-container">
+                    <button class="newEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="newEventNav-btn" id="newEventPrev-btn">&lt;</button>
+        <button class="newEventNav-btn" id="newEventNext-btn">&gt;</button>
+    </div>
+
+    {# About #}
+    <div class="about-container">
+        <h2 class="">ABOUT</h2>
+        <p class="">
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+            Si le génie logiciel est l'art de produire de bons logiciels, 
+            il est nécessaire de fixer les critères de qualité d'un logiciel.
+            Les six groupes d'indicateurs de qualité des logiciels selon la norme ISO 9126.
+        </p>
+    </div>
+
+    {# Past event #}
+    <div class="eventName-container">
+        <h2 class="event-name">PAST EVENTS</h2>
+        <button class="event-btn">
+            <a id="a-customisePastEvent" class="a-default" href="#"><strong>SEE MORE ▶</strong></a>
+        </button>
+    </div>
+    <div id="pastEventCarousel-container">
+        <div id="pastEventCarousel-slides">
+            <div class="pastEventCarousel-slide" id="pastEventCarousel-slide1">
+                <div class="pastEventImg-container">
+                    <a href="#"><img class="pastEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="pastEventDescrp-container">
+                    <div class="pastEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="pastEventDescrp-">
+                    </div>
+                </div>
+                <div class="pastEventbtn-container">
+                    <button class="pastEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="pastEventCarousel-slide" id="pastEventCarousel-slide2">
+                <div class="pastEventImg-container">
+                    <a href="#"><img class="pastEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="pastEventDescrp-container">
+                    <div class="pastEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="pastEventDescrp-">
+                    </div>
+                </div>
+                <div class="pastEventbtn-container">
+                    <button class="pastEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="pastEventCarousel-slide" id="pastEventCarousel-slide3">
+                <div class="pastEventImg-container">
+                    <a href="#"><img class="pastEventImg" src="images/home/foret_2.jpg"></a>
+                </div>
+                <div class="pastEventDescrp-container">
+                    <div class="pastEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="pastEventDescrp-">
+                    </div>
+                </div>
+                <div class="pastEventbtn-container">
+                    <button class="pastEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+            <div class="pastEventCarousel-slide" id="pastEventCarousel-slide4">
+                <div class="pastEventImg-container">
+                    <a href="#"><img class="pastEventImg" src=""></a>
+                </div>
+                <div class="pastEventDescrp-container">
+                    <div class="pastEventDescrp-">
+                        <h4>Nom de l'évenement</h4>
+                        <p>Cotonou, 10/03/2024 08:30min</p>
+                    </div>
+                    <div class="pastEventDescrp-">
+                    </div>
+                </div>
+                <div class="pastEventbtn-container">
+                    <button class="pastEventCarousel-btn"><a class="a-default" href="#">See more</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="pastEventNav-btn" id="pastEventPrev-btn">&lt;</button>
+        <button class="pastEventNav-btn" id="pastEventNext-btn">&gt;</button>
+    </div>
+{% endblock %}

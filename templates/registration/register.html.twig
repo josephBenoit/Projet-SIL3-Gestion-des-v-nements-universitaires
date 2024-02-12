@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <div class="sing_up-container">
+        <div class="sing_up-name">
+            <h1>Inscription</h1>
+        </div>
+        {{ form_start(registrationForm, {'attr': {'class': 'sing_up-form'}}) }}
+            <div class="">
+                {{ form_errors(registrationForm) }}
+            </div>
+            {{ form_label(registrationForm.nom, null, {'label_attr': {'class': 'sing_up-label'}}) }}  
+            {{ form_widget(registrationForm.nom, {'attr': {'class': 'sing_up-input'}}) }}
+            {{ form_label(registrationForm.prenom, null, {'label_attr': {'class': 'sing_up-label'}}) }}
+            {{ form_widget(registrationForm.prenom, {'attr': {'class': 'sing_up-input'}}) }}
+            {{ form_label(registrationForm.filiere, null, {'label_attr': {'class': 'sing_up-label'}}) }}
+            {{ form_widget(registrationForm.filiere, {'attr': {'class': 'sing_up-input'}}) }}
+            {{ form_label(registrationForm.nom_utilisateur, null, {'label_attr': {'class': 'sing_up-label'}}) }}
+            {{ form_widget(registrationForm.nom_utilisateur, {'attr': {'class': 'sing_up-input'}}) }}
+            {{ form_label(registrationForm.email, null, {'label_attr': {'class': 'sing_up-label'}}) }}
+            {{ form_widget(registrationForm.email, {'attr': {'class': 'sing_up-input'}}) }}
+            {{ form_label(registrationForm.password, 'Mot de passe', {'label_attr': {'class': 'sing_up-label'}}) }}
+            {{ form_widget(registrationForm.password, {'attr': {'class': 'sing_up-input'}}, {
+                label: 'Password'
+            }) }}
+            {# {{ form_row(registrationForm.agreeTerms) }}     #}
+            <button type="submit" class="sing_up-btn">S'inscrire</button>
+        {{ form_end(registrationForm) }}
+        <div class="sing_up-bottom">
+            <p >Vous avez déjà un compte ? <a id="sing_up_a-customise" class="a-default" href="{{path('app_login')}}">Connectez-vous</a>.</p>
+        </div>
+    </div>
+{% endblock %}

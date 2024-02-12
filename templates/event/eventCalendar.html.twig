@@ -1,0 +1,78 @@
+{% extends "base.html.twig" %}
+
+{% block title %}GasaEvent -Evenements{% endblock %}
+
+{% block body %}
+    {# Filtre de recherche #}
+    <div class="eventCalendar-filter" id="">
+        <div class="filtre-search_bar" id="">
+            <input class="search-input" type="text" placeholder="Rechercher...">
+            <button class="search_bar-btn" id="search-btn" type="submit">Rechercher</button>
+            <button class="search_bar-btn" id="filter-btn" type="submit" onclick="toggleFilter()">Filter by</button>
+        </div>
+        <div class="filter-container" id="filter-container">
+            <label class="filter-label" for="category">Catégorie :</label>
+            <select class="filter-select" id="category" name="category">
+                <option value="tous">Tous</option>
+                <option value="culture">Culture</option>
+                <option value="sport">Sport</option>
+            </select>
+            <label class="filter-label" for="date">Date :</label>
+            <input class="filter-input"  type="date" id="date" name="date">
+            <label class="filter-label" for="place">Lieu :</label>
+            <select class="filter-select" id="place" name="place">
+                <option value="cotonou">Cotonou</option>
+                <option value="porto-novo">Porto-novo</option>
+                <option value="abomey-calavi">Abomey-Calavi</option>
+            </select>
+        </div>
+    </div>
+
+    {# Afficher le calendrier #}
+    <div class="eventCalendar-calendar">
+        <div class="calendar-container">
+            <div class="calendar-nav">
+                <button class="calendar-btn" id="prevMonth" onclick="toggleCalendarBtn()">&lt;</button>
+                <h1 id="currentMonth">Month Year</h1>
+                <button class="calendar-btn" id="nextMonth" onclick="toggleCalendarBtn()">&gt;</button>
+            </div>
+            <table id="calendar">
+                <thead>
+                    <tr>
+                        <th class="calendar-th">Sun</th>
+                        <th class="calendar-th">Mon</th>
+                        <th class="calendar-th">Tue</th>
+                        <th class="calendar-th">Wed</th>
+                        <th class="calendar-th">Thu</th>
+                        <th class="calendar-th">Fri</th>
+                        <th class="calendar-th">Sat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {# le script js ajoutrera automatiquement les dates du calendrier #}
+                </tbody>
+            </table>
+        </div>
+
+        {# Afficher la liste des evenements du mois #}
+        <div class="eventsList-container">
+            <div class="eventListName-container" id="">
+                <h3>Evénements du mois</h3>
+                <div class="" id="">
+
+                </div>
+            </div>
+            <div id="eventList" class="event-list">
+                {# le script js affichera la liste des evenements du mois  #}
+            </div>
+            <div id="eventDetails" class="event-details">
+                {# le script js affichera les details de l'evenement seletionner #}
+            </div>
+        </div>
+    </div>
+    
+    {# Afficher des resultat de recherche #}
+    <div class="eventCalendar-result" id="eventCalendar-result">
+        
+    </div>
+{% endblock %}

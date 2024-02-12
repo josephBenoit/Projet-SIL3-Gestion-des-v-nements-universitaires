@@ -1,0 +1,16 @@
+{# nave barre #}
+<nav id="navbar">
+    <span id="nav-name">GasaEvent</span>
+    <div id="navContainer-btn">
+        <button class="nav-btn"><a class="a-default" href="{{path('app_home')}}">Home</a></button>
+        <button class="nav-btn"><a class="a-default" href="{{path('app_eventCalendar')}}">Events</a></button>
+        {% if app.user %}
+            <button class="nav-btn"><a class="a-default" href="#">Compte</a></button>
+            <button class="nav-btn"><a class="a-default" href="{{path('app_logout')}}">Logout</a></button>
+        {% else %}
+            <button class="nav-btn"><a class="a-default" href="{{path('app_login')}}">Login</a></button>
+            <button class="nav-btn"><a class="a-default" href="{{path('app_register')}}">Sing up</a></button>
+        {% endif %}
+    </div>
+</nav>
+

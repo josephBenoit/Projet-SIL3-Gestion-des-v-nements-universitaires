@@ -1,0 +1,258 @@
+/* Filtre de recherche */
+/* Style pour le filtre de recherche */
+.eventCalendar-filter 
+{
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    border-bottom: solid 2px #ccc;
+    /* border-radius: 8px; */
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.filtre-search_bar 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 10px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.search-input 
+{
+    flex: 1;
+    margin-right: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.search_bar-btn
+{
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+#search-btn 
+{
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#search-btn:hover 
+{
+    background-color: #039108;
+}
+
+#filter-btn 
+{
+    background-color: #2196f3;
+    /* background-color: #0362b1; */
+
+    color: #fff;
+    cursor: pointer;
+}
+
+#filter-btn:hover 
+{
+    background-color: #0575c0;
+    /* background-color: #035497; */
+
+}
+
+.filter-container 
+{
+    display: none;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filter-label
+{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.filter-select
+{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.filter-input
+{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+} 
+
+/* Event calendar */
+.eventCalendar-calendar 
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.calendar-container 
+{
+    margin-bottom: 20px;
+    height: 500px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.calendar-nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border: solid 1px #ccc;
+    border-bottom: none;
+}
+
+#calendar 
+{
+    height: 442.5px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-th
+{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #dfdbdb;
+}
+
+.calendar-btn
+{
+    width: 90px;
+    padding: 10px;
+    font-size: 20px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.calendar-btn:hover
+{
+    background-color: #333;
+    color: white;
+}
+
+#prevMonth
+{
+    border-left: none;
+}
+
+#nextMonth
+{
+    border-right: none;
+}
+
+td 
+{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+td:hover 
+{
+    background-color: #f0f0f0;
+}
+
+td.other-month /* Indiquer les jours qui ne sont du mois selectionner */
+{
+    color: #ccc; 
+}
+
+td.has-events /* Indiquer sur le calendrier les evenements du mois */
+{
+    background-color: #ffc;
+    cursor: pointer;
+} 
+
+/* Event list */
+.eventsList-container 
+{
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    /* background-color: #333; */
+}
+
+.eventListName-container
+{
+    padding: 20px;
+    border-bottom: solid 1px #ccc;
+}
+
+.eventListName-container h3
+{
+    text-align: center;
+}
+
+.event-list 
+{
+    margin-right: 10px;
+    width: 100%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    /* background-color: #4caf50; */
+}
+
+.eventsList-li
+{
+    list-style-type: none;
+    width: 100%;
+    padding: 35px;
+    border-bottom: solid 1px #ccc;
+    /* background-color: aqua; */
+}
+
+/* Event detail */
+.event-details 
+{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    /* background-color: #039108; */
+}
+
+/* Event result */
+.eventCalendar-result 
+{
+    padding: 100px;
+    margin-bottom: 100px;
+}
